@@ -9,8 +9,15 @@ import SwiftUI
 
 struct ContentView: View {
   var body: some View {
-    Text("Hello, world!")
-      .padding()
+    VStack {
+      Button(action: { print("Button Tapped!") }) {
+        Image(systemName: "arrow.up.message.fill")
+          .resizable()
+          .aspectRatio(contentMode: .fill)
+          .frame(width: 100, height: 100)
+          .foregroundColor(.green)
+      }
+    }
   }
 }
 
