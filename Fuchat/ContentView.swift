@@ -20,6 +20,14 @@ struct ContentView: View {
             .frame(width: 100, height: 100)
             .foregroundColor(.green)
         }
+      } else {
+        Button(action: self.voiceChanger.stop) {
+          Image(systemName: "stop.fill")
+            .resizable()
+            .aspectRatio(contentMode: .fill)
+            .frame(width: 100, height: 100)
+            .foregroundColor(.red)
+        }
       }
     }
   }
