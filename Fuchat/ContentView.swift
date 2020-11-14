@@ -12,8 +12,8 @@ struct ContentView: View {
 
   var body: some View {
     VStack {
-      if voiceChanger.speaking == false {
-        Button(action: { print("Button Tapped!") }) {
+      if voiceChanger.isSpeaking == false {
+        Button(action: self.voiceChanger.start) {
           Image(systemName: "arrow.up.message.fill")
             .resizable()
             .aspectRatio(contentMode: .fill)
