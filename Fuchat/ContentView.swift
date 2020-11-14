@@ -8,14 +8,18 @@
 import SwiftUI
 
 struct ContentView: View {
+  @ObservedObject var voiceChanger: VoiceChanger
+
   var body: some View {
     VStack {
-      Button(action: { print("Button Tapped!") }) {
-        Image(systemName: "arrow.up.message.fill")
-          .resizable()
-          .aspectRatio(contentMode: .fill)
-          .frame(width: 100, height: 100)
-          .foregroundColor(.green)
+      if voiceChanger.speaking == false {
+        Button(action: { print("Button Tapped!") }) {
+          Image(systemName: "arrow.up.message.fill")
+            .resizable()
+            .aspectRatio(contentMode: .fill)
+            .frame(width: 100, height: 100)
+            .foregroundColor(.green)
+        }
       }
     }
   }
@@ -23,6 +27,6 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
   static var previews: some View {
-    ContentView()
+    ContentView(voiceChanger: VoiceChanger())
   }
 }
