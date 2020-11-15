@@ -21,14 +21,21 @@ class VoiceChanger: ObservableObject {
     }
   }
 
-  func start() {
+  init() {
+    setupAudioSession()
+    setupAudioEngine()
+  }
+
+  func setupAudioSession() {
     let session = AVAudioSession.sharedInstance()
     do {
       try session.setCategory(.playAndRecord, options: [.allowBluetoothA2DP])
     } catch {
       print("Failed to configure and activate session.")
     }
+  }
 
+  func setupAudioEngine() {
     let delay = AVAudioUnitDelay()
     let reverb = AVAudioUnitReverb()
 
@@ -44,7 +51,9 @@ class VoiceChanger: ObservableObject {
     engine.connect(input, to: delay, format: format)
     engine.connect(delay, to: reverb, format: format)
     engine.connect(reverb, to: output, format: format)
+  }
 
+  func start() {
     do {
       try engine.start()
       isSpeaking = true
