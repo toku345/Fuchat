@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9B3E8E842565224300225916 /* VoiceRecorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B3E8E832565224300225916 /* VoiceRecorder.swift */; };
 		9BBE4DD4255E83BE0062A603 /* FuchatApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BBE4DD3255E83BE0062A603 /* FuchatApp.swift */; };
 		9BBE4DD6255E83BE0062A603 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BBE4DD5255E83BE0062A603 /* ContentView.swift */; };
 		9BBE4DD8255E83C30062A603 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9BBE4DD7255E83C30062A603 /* Assets.xcassets */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9B3E8E832565224300225916 /* VoiceRecorder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoiceRecorder.swift; sourceTree = "<group>"; };
 		9BBE4DD0255E83BE0062A603 /* Fuchat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Fuchat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9BBE4DD3255E83BE0062A603 /* FuchatApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FuchatApp.swift; sourceTree = "<group>"; };
 		9BBE4DD5255E83BE0062A603 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -38,6 +40,7 @@
 		9BBE4DC7255E83BE0062A603 = {
 			isa = PBXGroup;
 			children = (
+				9B3E8E832565224300225916 /* VoiceRecorder.swift */,
 				9BBE4DD2255E83BE0062A603 /* Fuchat */,
 				9BBE4DD1255E83BE0062A603 /* Products */,
 			);
@@ -164,6 +167,7 @@
 			files = (
 				9BBE4DD6255E83BE0062A603 /* ContentView.swift in Sources */,
 				9BBE4DE6255FBD850062A603 /* VoiceChanger.swift in Sources */,
+				9B3E8E842565224300225916 /* VoiceRecorder.swift in Sources */,
 				9BBE4DD4255E83BE0062A603 /* FuchatApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
