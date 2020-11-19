@@ -40,7 +40,6 @@
 		9BBE4DC7255E83BE0062A603 = {
 			isa = PBXGroup;
 			children = (
-				9B3E8E832565224300225916 /* VoiceRecorder.swift */,
 				9BBE4DD2255E83BE0062A603 /* Fuchat */,
 				9BBE4DD1255E83BE0062A603 /* Products */,
 			);
@@ -57,6 +56,7 @@
 		9BBE4DD2255E83BE0062A603 /* Fuchat */ = {
 			isa = PBXGroup;
 			children = (
+				9B3E8E832565224300225916 /* VoiceRecorder.swift */,
 				9BBE4DD3255E83BE0062A603 /* FuchatApp.swift */,
 				9BBE4DD5255E83BE0062A603 /* ContentView.swift */,
 				9BBE4DE5255FBD850062A603 /* VoiceChanger.swift */,
