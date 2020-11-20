@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9B3E8E8D2567409800225916 /* VoiceRecorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B3E8E8C2567409800225916 /* VoiceRecorder.swift */; };
 		9BBE4DD4255E83BE0062A603 /* FuchatApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BBE4DD3255E83BE0062A603 /* FuchatApp.swift */; };
 		9BBE4DD6255E83BE0062A603 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BBE4DD5255E83BE0062A603 /* ContentView.swift */; };
 		9BBE4DD8255E83C30062A603 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9BBE4DD7255E83C30062A603 /* Assets.xcassets */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9B3E8E8C2567409800225916 /* VoiceRecorder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoiceRecorder.swift; sourceTree = "<group>"; };
 		9BBE4DD0255E83BE0062A603 /* Fuchat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Fuchat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9BBE4DD3255E83BE0062A603 /* FuchatApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FuchatApp.swift; sourceTree = "<group>"; };
 		9BBE4DD5255E83BE0062A603 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -60,6 +62,7 @@
 				9BBE4DD7255E83C30062A603 /* Assets.xcassets */,
 				9BBE4DDC255E83C30062A603 /* Info.plist */,
 				9BBE4DD9255E83C30062A603 /* Preview Content */,
+				9B3E8E8C2567409800225916 /* VoiceRecorder.swift */,
 			);
 			path = Fuchat;
 			sourceTree = "<group>";
@@ -164,6 +167,7 @@
 			files = (
 				9BBE4DD6255E83BE0062A603 /* ContentView.swift in Sources */,
 				9BBE4DE6255FBD850062A603 /* VoiceChanger.swift in Sources */,
+				9B3E8E8D2567409800225916 /* VoiceRecorder.swift in Sources */,
 				9BBE4DD4255E83BE0062A603 /* FuchatApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
