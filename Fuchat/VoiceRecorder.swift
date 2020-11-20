@@ -10,8 +10,8 @@ import Combine
 import Foundation
 import SwiftUI
 
-class AudioRecorder: ObservableObject {
-  let objectWillChange = PassthroughSubject<AudioRecorder, Never>()
+class VoiceRecorder: ObservableObject {
+  let objectWillChange = PassthroughSubject<VoiceRecorder, Never>()
 
   private var recorder: AVAudioRecorder!
 
@@ -47,5 +47,10 @@ class AudioRecorder: ObservableObject {
     } catch {
       print("Could not start recording.")
     }
+  }
+
+  func stopRecording() {
+    recorder.stop()
+    recording = false
   }
 }

@@ -11,7 +11,7 @@ import SwiftUI
 struct FuchatApp: App {
   var body: some Scene {
     WindowGroup {
-      ContentView(voiceChanger: VoiceChanger())
+      ContentView(voiceRecorder: VoiceRecorder(), voiceChanger: VoiceChanger())
     }
   }
 }
